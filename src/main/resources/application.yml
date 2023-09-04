@@ -1,0 +1,17 @@
+spring:
+    h2:
+        console:
+            enabled: true
+    datasource:
+        url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:fakezap}
+        username: ${SPRING_DATASOURCE_USER:sa}
+        password: ${SPRING_DATASOURCE_PASSWORD:}
+        driver-class-name: ${SPRING_DATASOURCE_DRIVER:} 
+    jpa:
+        hibernate:
+            ddl-auto: ${SPRING_JPA_DDL:create}
+
+
+server:
+    servlet:
+        contextPath: ${SERVLET_BASE_URL:}
